@@ -5,7 +5,7 @@
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
 
-
+alert();
 //l'utente sceglie se essere pari o dispari
 var sceltaUtente = prompt("Pari o Dispari?");
 //l'utente sceglie il numero da lanciare
@@ -20,15 +20,18 @@ console.log(somma);
 // Verifichiamo se la somma sia pari o dispari attraverso la debita funzione
 if (verifica(somma)){
   console.log('pari');
+  somma = 'pari';
 }
 else {
   console.log('dispari');
+  somma = 'dispari';
 }
-// Ora bisogna stabilire il vincitore, ovvero se l'esito corrisponde alle scelta iniziale dell'utente
-if sceltaUtente == "pari"
-
-
-
+//converto somma in stringa e la confrontiamo con scelta utente e stabiliamo il vincitore, ovvero se l'esito corrisponde alle scelta iniziale dell'utente
+if (sceltaUtente == somma){
+  console.log("hai vinto");
+} else {
+  console.log("hai perso");
+}
 
 //funzioni
 // Genera numero
