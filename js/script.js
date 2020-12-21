@@ -4,19 +4,29 @@
 // Sommiamo i due numeri
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
-// Consigli del giorno:
-// 1. scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
-// 2. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 
-// Useremo la funzione Math.random per generare i nostri numeri da 1 a 5, con floor arrotonderemo
+
+//l'utente sceglie se essere pari o dispari
 var sceltaUtente = prompt("Pari o Dispari?");
+//l'utente sceglie il numero da lanciare
 var numeroUtente = parseInt(prompt("Scegli un numero da 1 a 5"));
+// con la funzione Math.random avremo il numero del computer
 var numeroComputer = generaRandom(1,5);
 console.log(numeroUtente);
 console.log(numeroComputer);
-
+// qui la variabile somma tra i 2 numeri che corrisponerdà alla relativa funzione
 var somma = sommaNumeri(numeroUtente,numeroComputer);
 console.log(somma);
+// Verifichiamo se la somma sia pari o dispari attraverso la debita funzione
+if (verifica(somma)){
+  console.log('pari');
+}
+else {
+  console.log('dispari');
+}
+// Ora bisogna stabilire il vincitore, ovvero se l'esito corrisponde alle scelta iniziale dell'utente
+if sceltaUtente == "pari"
+
 
 
 
@@ -28,5 +38,12 @@ function generaRandom(min, max){
 // somma
 function sommaNumeri(n1,n2){
   var risultato = n1 + n2;
-  return risultato; //ultima istruzione da inserire
+  return risultato;
+}
+// verifica pari o dispari
+function verifica(somma){
+  if ( somma % 2 == 0 ){
+    return true;
+  }
+  return false;
 }
