@@ -8,7 +8,7 @@
 // 1. scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
 // 2. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 
-// Useremo la funzione Math.random per generare i nostri numeri da 1 a 5, daremo ceil al valore minimo (1) e floor al valore massimo (5)
+// Useremo la funzione Math.random per generare i nostri numeri da 1 a 5, con floor arrotonderemo
 var sceltaUtente = prompt("Pari o Dispari?");
 var numeroUtente = parseInt(prompt("Scegli un numero da 1 a 5"));
 var numeroComputer = generaRandom(1,5);
